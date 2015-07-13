@@ -1,0 +1,22 @@
+{
+  "name": "js-spiver-arthe-by",
+  "version": "0.0.0",
+  "authors": [
+    "dandeeee <dandeeee@ya.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "semantic-ui" : "2.*",
+    "swiper" : "*",
+    "lodash" : "*"
+  }
+}
