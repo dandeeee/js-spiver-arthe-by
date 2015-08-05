@@ -87,3 +87,68 @@ body {
 .toc{
     background: url("../fonts/icons.svg") top left !important;
 }
+
+.rounded-corners-0-3em{
+    border-radius: 0.3em;
+}
+
+.collections-grid img {
+}
+
+.top-menu-link {
+}
+
+.top-menu-link:hover{
+}
+
+.eco-friendly{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#398235+3,c9de96+61,c9de96+100&amp;1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(57,130,53,1) 0%, rgba(57,130,53,0.97) 3%, rgba(201,222,150,0.39) 61%, rgba(201,222,150,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(57,130,53,1)), color-stop(3%,rgba(57,130,53,0.97)), color-stop(61%,rgba(201,222,150,0.39)), color-stop(100%,rgba(201,222,150,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(57,130,53,1) 0%,rgba(57,130,53,0.97) 3%,rgba(201,222,150,0.39) 61%,rgba(201,222,150,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(57,130,53,1) 0%,rgba(57,130,53,0.97) 3%,rgba(201,222,150,0.39) 61%,rgba(201,222,150,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(57,130,53,1) 0%,rgba(57,130,53,0.97) 3%,rgba(201,222,150,0.39) 61%,rgba(201,222,150,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(57,130,53,1) 0%,rgba(57,130,53,0.97) 3%,rgba(201,222,150,0.39) 61%,rgba(201,222,150,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#398235', endColorstr='#00c9de96',GradientType=1 ); /* IE6-9 */
+
+
+    color: #024603;
+    font-size: 120%;
+    margin-top: -1.7em !important;
+    font-style: italic;
+    font-family: "Lucida Console";
+
+
+}
+
+.collections-sidebar .active {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-right: 4px solid black;
+}
+
+.sidebar .active {
+    text-decoration: underline !important;
+}
+
+.top-menu .active {
+    border-bottom: 4px solid black !important;
+}
+
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 25px;
+    height: 0;
+}
+
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%!important;
+    height: 100%!important;
+    border: 0 !important;
+    padding: 0.5em;
+}

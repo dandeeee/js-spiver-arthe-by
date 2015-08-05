@@ -97,8 +97,8 @@ gulp.task('style:build', function () {
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img) 
-        .pipe(gulp.dest(path.build.img))
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.img));
+        //.pipe(reload({stream: true})); // does not copy more than 16 imgs
 });
 
 gulp.task('fonts:build', function() {
