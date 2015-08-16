@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 var path = {
     build: {
         html: 'build/',
+        assets: 'build/',
         js: 'build/assets/js/',
         data: 'build/assets/data/',
         css: 'build/assets/css/',
@@ -20,7 +21,8 @@ var path = {
         fonts: 'build/assets/fonts/'
     },
     src: {
-        html: ['src/**/*.html',"!src/tmpl/*.*"],
+        html: ['src/static/**/*.html','!src/static/tmpl/*.*'],
+        assets: ['src/static/**/*.*','!src/static/**/*.html','!src/static/tmpl/*.*'],
         js: 'src/assets/js/main.js',
         data: 'src/assets/data/**/*.*',
         style: 'src/assets/style/main.css',
@@ -28,7 +30,8 @@ var path = {
         fonts: 'src/assets/fonts/**/*.*'
     },
     watch: {
-        html: 'src/**/*.html',
+        html: 'src/static/**/*.html',
+        assets: '!src/static/**/*.html',
         js: 'src/assets/js/**/*.js',
         data: 'src/assets/data/**/*.*',
         style: 'src/assets/style/**/*.*',
@@ -55,8 +58,13 @@ gulp.task('webserver', function () {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) 
         .pipe(rigger())
-        .pipe(gulp.dest(path.build.html))
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.html));
+        //.pipe(reload({stream: true}));
+});
+
+gulp.task('assets:build', function () {
+    gulp.src(path.src.assets)
+        .pipe(gulp.dest(path.build.assets));
 });
 
 gulp.task('js:build', function () {
@@ -107,6 +115,7 @@ gulp.task('fonts:build', function() {
 });
 
 gulp.task('build', [
+    'assets:build',
     'html:build',
     'js:build',
     'data:build',
@@ -118,6 +127,9 @@ gulp.task('build', [
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
+    });
+    watch([path.watch.assets], function(event, cb) {
+        gulp.start('assets:build');
     });
     watch([path.watch.style], function(event, cb) {
         gulp.start('style:build');

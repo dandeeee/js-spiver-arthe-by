@@ -1,0 +1,4 @@
+добавить в футер свое лого и гор черту типа как тут
+http://semantic-ui.com/elements/container.html#containers-using-grids
+
+
