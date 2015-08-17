@@ -41,8 +41,8 @@ COLLECTIONS =
             thumbnail : "/collections/img/thumbnails/nahir-broccato.jpg"
         },
         {
-            title : "Nahir Craklè",
-            url : "/collections/nahir-crakle/",
+            title : "Nahir Cracklè",
+            url : "/collections/nahir-crackle/",
             thumbnail : "/collections/img/thumbnails/nahir-crackle.jpg"
         },
         {
@@ -66,9 +66,9 @@ COLLECTIONS =
             thumbnail : "/collections/img/thumbnails/cocciopesto.jpg"
         },
         {
-            title : "Decorà Gold",
-            url : "/collections/decora-gold/",
-            thumbnail : "/collections/img/thumbnails/decora-gold.jpg"
+            title : "Decorà",
+            url : "/collections/decora/",
+            thumbnail : "/collections/img/thumbnails/decora.jpg"
         },
         {
             title : "Decorà DeLuxe",

@@ -58,8 +58,8 @@ gulp.task('webserver', function () {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) 
         .pipe(rigger())
-        .pipe(gulp.dest(path.build.html));
-        //.pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.html))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('assets:build', function () {

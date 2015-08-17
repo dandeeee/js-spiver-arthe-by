@@ -28,18 +28,14 @@
                 <h2 class=""><i>Zephyro Pearl</i></h2>
 
                 <div class="ui vertical content-centered basic segment">
-                    <div class="swiper-caravaggio-pearl swiper-container">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="zephyro-pearl-1.jpg"></div>
                             <div class="swiper-slide"><img src="zephyro-pearl-2.jpg"></div>
                         </div>
-                        <div class="swiper-caravaggio-pearl-pagination swiper-pagination"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
-                <script type="text/javascript">
-                    $(document).ready(initSwiper('.swiper-caravaggio-pearl', '.swiper-caravaggio-pearl-pagination'));
-                </script>
 
                 <div class="ui basic segment">
                     <div class="ui text container">
@@ -83,6 +79,10 @@
                     <img src="zephyro-pearl-palette-1.jpg">
                     <img src="zephyro-pearl-palette-2.jpg">
                 </div>
+
+                <script type="text/javascript">
+                    $(document).ready(initSwiper('.swiper-container', '.swiper-pagination'));
+                </script>
 
             </div>
         </div>
