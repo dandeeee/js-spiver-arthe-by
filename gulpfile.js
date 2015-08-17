@@ -18,7 +18,8 @@ var path = {
         data: 'build/assets/data/',
         css: 'build/assets/css/',
         img: 'build/assets/img/',
-        fonts: 'build/assets/fonts/'
+        fonts: 'build/assets/fonts/',
+        textolite: 'build/textolite/'
     },
     src: {
         html: ['src/static/**/*.html','!src/static/tmpl/*.*'],
@@ -27,7 +28,8 @@ var path = {
         data: 'src/assets/data/**/*.*',
         style: 'src/assets/style/main.css',
         img: 'src/assets/img/**/*.*',
-        fonts: 'src/assets/fonts/**/*.*'
+        fonts: 'src/assets/fonts/**/*.*',
+        textolite: 'src/textolite/**/*.*'
     },
     watch: {
         html: 'src/static/**/*.html',
@@ -114,6 +116,11 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('textolite:build', function () {
+    gulp.src(path.src.textolite)
+        .pipe(gulp.dest(path.build.textolite));
+});
+
 gulp.task('build', [
     'assets:build',
     'html:build',
@@ -121,7 +128,8 @@ gulp.task('build', [
     'data:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'textolite:build'
 ]);
 
 gulp.task('watch', function(){
