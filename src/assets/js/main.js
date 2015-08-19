@@ -14,10 +14,15 @@
 $(document).ready(
     function () {
         inflateNavigation('#auto-data-footer-collections', COLLECTIONS);
-        inflateCollectionsGrid('#auto-data-collections-grid', COLLECTIONS);
         inflateNavigation('#auto-data-footer-dop', DOP);
+
+        inflateCollectionsGrid('#auto-data-collections-grid', COLLECTIONS);
+        //inflateDopGrid('#auto-data-dop-grid', DOP);
+
         inflateNavigation('#auto-data-collections-list', COLLECTIONS);
-        createSideBar();
+        inflateNavigation('#auto-data-dop-list', DOP);
+
+        createLeftSidebar();
         selectActiveTopMenuTab();
     }
 );
@@ -79,12 +84,35 @@ function inflateCollectionsGrid(blockId, array) {
         }
 
         grid.html(stringizeArray(_.map(array, function(obj) { return makeDiv(obj) })));
-
     }
 }
 
 
-function createSideBar(){
+// TODO: delete
+//function inflateDopGrid(blockId, array) {
+//    var grid = $(blockId);
+//
+//    if(grid.length > 0) {
+//        var gradienIndex = 0;
+//        var gradientMap = ['red-gradient','orange-gradient','olive-gradient','green-gradient','teal-gradient',
+//            'blue-gradient','violet-gradient','purple-gradient','pink-gradient','brown-gradient','grey-gradient','black-gradient'];
+//
+//        var makeDiv = function(obj){
+//
+//            return '<a href="' + obj.url + '">' +
+//                '<div class="ui ' + gradientMap[gradienIndex++ % _.size(gradientMap)] + ' inverted padded padded-left-3em simple segment">' +
+//                    obj.title +
+//                '</div>' +
+//                '</a>' +
+//                '<br>';
+//        }
+//
+//        grid.html(stringizeArray(_.map(array, function(obj) { return makeDiv(obj) })));
+//    }
+//}
+
+
+function createLeftSidebar(){
     $('.ui.sidebar')
         .sidebar('setting', 'transition', 'overlay')
         .sidebar('setting', 'mobileTransition', 'overlay')

@@ -1,6 +1,7 @@
 @import url("../../../bower_components/normalize.css/normalize.css");
 /*@import url("../../../bower_components/semantic-ui/dist/semantic.css");*/
 @import url("../../../bower_components/swiper/dist/css/swiper.min.css");
+@import url("gradients.css");
 
 
 html {
@@ -72,6 +73,10 @@ body {
     padding-left: 1em !important;
 }
 
+.padded-left-3em {
+    padding-left: 3em !important;
+}
+
 .padded-0-5em{
     padding: 0.5em !important;
 }
@@ -121,14 +126,14 @@ body {
 
 }
 
-.collections-sidebar .active {
+.page-sidebar .active {
     display: block;
     width: 100%;
     border-bottom: 1px solid black;
     border-right: 4px solid black;
 }
 
-.sidebar .active {
+.floating-sidebar .active {
     text-decoration: underline !important;
 }
 
@@ -152,3 +157,11 @@ body {
     border: 0 !important;
     padding: 0.5em;
 }
+
+.simple {
+    border-radius: 0 !important;
+    border: none !important;
+    background-repeat: no-repeat !important;
+}
+
+
