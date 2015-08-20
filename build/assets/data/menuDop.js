@@ -59,16 +59,17 @@ DOP =
     //]
 },
 {
+    title : "Грунты",
+    url : "/dop/grunty/"
+},
+
+{
     title : "Эмали",
     url : "/dop/emali/"
 },
 {
-    title : "Грунты",
-    url : "/dop/alcid-grunty/"
-},
-{
-    title : "Лаки и пропитки",
-    url : "/dop/laki-propitki/"
+    title : "Пропитки и защитные средства",
+    url : "/dop/propitki-zashitnye/"
 },
 {
     title : "Изолирующие и фиксирующие средства",
