@@ -1,9 +1,6 @@
 DOP =
 [
-{
-    title : "Инструменты",
-    url : "/dop/instrumenty/"
-},
+
 {
     title : "Краски для помещений",
     url : "/dop/vnutrenniye-kraski/"
@@ -109,5 +106,9 @@ DOP =
 {
     title : "Тонирующие системы",
     url : "/dop/toniruyushchie-sistemy/"
+},
+{
+    title : "Инструменты",
+    url : "/dop/instrumenty/"
 }
 ];
