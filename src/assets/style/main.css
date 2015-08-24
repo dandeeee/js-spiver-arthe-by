@@ -29,6 +29,23 @@ body {
     padding: 0;
 }
 
+.footer-link {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.footer-link:link,
+.footer-link:visited, {
+    color: white !important;
+    text-decoration: underline !important;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    background-color: white !important;
+    color: black !important;
+}
+
 .moved-left-1em {
     font-size: 90%;
     margin-left: 1em !important;
