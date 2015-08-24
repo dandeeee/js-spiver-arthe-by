@@ -1,15 +1,8 @@
-/*
- Third party
- */
 
 //= ../../../bower_components/jquery/dist/jquery.min.js
 //= ../../../bower_components/semantic-ui/dist/semantic.min.js
 //= ../../../bower_components/swiper/dist/js/swiper.min.js
 //= ../../../bower_components/lodash/lodash.min.js
-
-
-//= partials/helper.js
-
 
 $(document).ready(
     function () {
@@ -17,7 +10,6 @@ $(document).ready(
         inflateNavigation('#auto-data-footer-dop', DOP);
 
         inflateCollectionsGrid('#auto-data-collections-grid', COLLECTIONS);
-        //inflateDopGrid('#auto-data-dop-grid', DOP);
 
         inflateNavigation('#auto-data-collections-list', COLLECTIONS);
         inflateNavigation('#auto-data-dop-list', DOP);
@@ -73,7 +65,6 @@ function inflateCollectionsGrid(blockId, array) {
 
     if(grid.length > 0) {
         var makeDiv = function(obj){
-
             if(obj.thumbnail)
                 return '<div class="column center aligned">' +
                     '<a href="' + obj.url + '">' +
@@ -86,30 +77,6 @@ function inflateCollectionsGrid(blockId, array) {
         grid.html(stringizeArray(_.map(array, function(obj) { return makeDiv(obj) })));
     }
 }
-
-
-// TODO: delete
-//function inflateDopGrid(blockId, array) {
-//    var grid = $(blockId);
-//
-//    if(grid.length > 0) {
-//        var gradienIndex = 0;
-//        var gradientMap = ['red-gradient','orange-gradient','olive-gradient','green-gradient','teal-gradient',
-//            'blue-gradient','violet-gradient','purple-gradient','pink-gradient','brown-gradient','grey-gradient','black-gradient'];
-//
-//        var makeDiv = function(obj){
-//
-//            return '<a href="' + obj.url + '">' +
-//                '<div class="ui ' + gradientMap[gradienIndex++ % _.size(gradientMap)] + ' inverted padded padded-left-3em simple segment">' +
-//                    obj.title +
-//                '</div>' +
-//                '</a>' +
-//                '<br>';
-//        }
-//
-//        grid.html(stringizeArray(_.map(array, function(obj) { return makeDiv(obj) })));
-//    }
-//}
 
 
 function createLeftSidebar(){
